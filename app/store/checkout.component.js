@@ -7,15 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+var CheckoutComponent = /** @class */ (function () {
+    function CheckoutComponent() {
     }
-    AppComponent = __decorate([
+    CheckoutComponent = __decorate([
         core_1.Component({
-            selector: "app",
-            template: "\n    <router-outlet></router-outlet>\n    "
+            template: "<div><h3 class=\"bt-info p-a-1\">Checkout Component</h3></div>"
         })
-    ], AppComponent);
-    return AppComponent;
+    ], CheckoutComponent);
+    return CheckoutComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.CheckoutComponent = CheckoutComponent;

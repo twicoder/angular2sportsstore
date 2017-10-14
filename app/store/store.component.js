@@ -12,10 +12,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var product_repository_1 = require("../model/product.repository");
 var cart_model_1 = require("../model/cart.model");
+var router_1 = require("@angular/router");
 var StoreComponent = /** @class */ (function () {
-    function StoreComponent(repository, cart) {
+    function StoreComponent(repository, cart, router) {
         this.repository = repository;
         this.cart = cart;
+        this.router = router;
         this.selectedCategory = null;
         this.productsPerPage = 4;
         this.selectedPage = 1;
@@ -55,6 +57,7 @@ var StoreComponent = /** @class */ (function () {
     });
     StoreComponent.prototype.addProductToCart = function (product) {
         this.cart.addLine(product);
+        this.router.navigateByUrl("/cart");
     };
     StoreComponent = __decorate([
         core_1.Component({
@@ -62,7 +65,9 @@ var StoreComponent = /** @class */ (function () {
             moduleId: module.id,
             templateUrl: "store.component.html"
         }),
-        __metadata("design:paramtypes", [product_repository_1.ProductRepository, cart_model_1.Cart])
+        __metadata("design:paramtypes", [product_repository_1.ProductRepository,
+            cart_model_1.Cart,
+            router_1.Router])
     ], StoreComponent);
     return StoreComponent;
 }());
