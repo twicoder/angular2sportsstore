@@ -27,7 +27,8 @@ var StaticDatasource = /** @class */ (function () {
             new product_model_1.Product(12, "Product 12", "Category 3", "Product 12 (Category 3)", 100),
             new product_model_1.Product(13, "Product 13", "Category 3", "Product 13 (Category 3)", 100),
             new product_model_1.Product(14, "Product 14", "Category 3", "Product 14 (Category 3)", 100),
-            new product_model_1.Product(15, "Product 15", "Category 3", "Product 15 (Category 3)", 100)
+            new product_model_1.Product(15, "Product 15", "Category 3", "Product 15 (Category 3)", 100),
+            new product_model_1.Product(16, "Product 16", "Category 3", "Product 16 (Category 3)", 100)
         ];
     }
     StaticDatasource.prototype.getProducts = function () {
